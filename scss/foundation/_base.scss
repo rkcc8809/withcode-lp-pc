@@ -1,0 +1,57 @@
+@use "../global/" as *;
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  src: url("../../fonts/NotoSansJP-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  src: url("../../fonts/NotoSansJP-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  src: url("../../fonts/NotoSansJP-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+  src: url("../../fonts/NotoSansJP-Black.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: $cNavy;
+}
+
+a {
+  text-decoration: none;
+  color: $cWhite;
+  transition: all 0.3s;
+}
+
+li {
+  list-style: none;
+}
