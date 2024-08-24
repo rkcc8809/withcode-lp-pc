@@ -16,6 +16,12 @@
   @include g.mq(sp) {
     max-width: 768px;
   }
+  @include g.mq(tab) {
+    max-width: 1024px;
+  }
+  @include g.mq(pc) {
+    max-width: 1500px;
+  }
 }
 
 .__inner {
@@ -32,6 +38,19 @@
   background-color: g.$cBlue;
 }
 
+.__sp-img {
+  display: block;
+  @include g.mq(sp) {
+    display: none;
+  }
+}
+.__pc-img {
+  display: none;
+  @include g.mq(sp) {
+    display: block;
+  }
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -41,6 +60,9 @@
       margin-right: 2.5%;
       padding-top: 10px;
       width: 45%;
+      @include g.mq(pc) {
+        width: 25%;
+      }
       & img {
         width: 100%;
         display: block;
@@ -67,26 +89,21 @@
       @include g.mq(sp) {
         left: -7.5%;
       }
+      @include g.mq(tab) {
+        width: 80%;
+      }
+      @include g.mq(pc) {
+        left: 0;
+        width: 60%;
+      }
       & img {
         width: 100%;
         height: auto;
         display: block;
       }
-      &.__pc {
-        display: none;
-        @include g.mq(sp) {
-          display: block;
-        }
-      }
-      &.__sp {
-        @include g.mq(sp) {
-          display: none;
-        }
-      }
     }
     &__ttl {
       position: absolute;
-      display: inline-block;
       text-align: right;
       &.__first {
         width: 50%;
@@ -94,6 +111,9 @@
         right: 20%;
         @include g.mq(sp) {
           top: 8%;
+        }
+        @include g.mq(tab) {
+          right: 25%;
         }
         & img {
           width: clamp(8.75rem, -0.341rem + 45.45vw, 11.875rem);
@@ -103,7 +123,11 @@
           left: 5px;
           @include g.mq(sp) {
             width: clamp(11.875rem, 6.667rem + 17.36vw, 15rem);
-            top: -15px;
+            top: -14px;
+          }
+          @include g.mq(tab) {
+            width: clamp(15rem, 7.461rem + 15.69vw, 17.5rem);
+            top: -22px;
           }
         }
       }
@@ -114,16 +138,24 @@
         @include g.mq(sp) {
           top: 17%;
         }
+        @include g.mq(tab) {
+          right: 5%;
+          top: 16%;
+        }
         & img {
           width: clamp(12.5rem, -2.045rem + 72.73vw, 17.5rem);
           height: auto;
           position: relative;
           z-index: -1;
-          top: -14px;
+          top: -18px;
           left: 0;
           @include g.mq(sp) {
             width: clamp(17.5rem, 9.688rem + 26.04vw, 22.188rem);
-            top: -20px;
+            top: -18px;
+          }
+          @include g.mq(tab) {
+            width: clamp(22.188rem, 11.821rem + 21.57vw, 25.625rem);
+            top: -28px;
           }
         }
       }
@@ -131,9 +163,12 @@
         font-size: clamp(0.938rem, -0.335rem + 6.36vw, 1.375rem);
         transform: rotate(-5deg);
         color: g.$cWhite;
-        display: inline-block;
         @include g.mq(sp) {
           font-size: clamp(1.375rem, 0.75rem + 2.08vw, 1.75rem);
+        }
+        @include g.mq(tab) {
+          display: block;
+          font-size: clamp(1.75rem, 0.961rem + 1.64vw, 2.5rem);
         }
       }
     }
@@ -154,6 +189,12 @@
         padding: 2% 5%;
         top: 28%;
       }
+      @include g.mq(tab) {
+        font-size: clamp(2rem, 1.145rem + 1.78vw, 2.813rem);
+        top: 26%;
+        padding: 1.5% 4%;
+        right: 5%;
+      }
     }
     &__circle {
       display: flex;
@@ -165,6 +206,9 @@
       bottom: 25%;
       @include g.mq(sp) {
         bottom: 24%;
+      }
+      @include g.mq(tab) {
+        bottom: 26%;
       }
       &__block {
         width: clamp(5rem, 2.5rem + 12.5vw, 6.25rem);
@@ -178,6 +222,10 @@
         @include g.mq(sp) {
           width: clamp(6.25rem, 20.83vw, 10rem);
           height: clamp(6.25rem, 20.83vw, 10rem);
+        }
+        @include g.mq(tab) {
+          width: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
+          height: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
         }
         &::before {
           content: "";
@@ -197,6 +245,9 @@
           @include g.mq(sp) {
             font-size: clamp(0.688rem, -0.042rem + 2.43vw, 1.125rem);
           }
+          @include g.mq(tab) {
+            font-size: clamp(1.125rem, 0.862rem + 0.55vw, 1.375rem);
+          }
         }
       }
     }
@@ -205,6 +256,9 @@
       top: clamp(19.375rem, 10.625rem + 43.75vw, 23.75rem);
       @include g.mq(sp) {
         top: clamp(24.375rem, 7.708rem + 55.56vw, 34.375rem);
+      }
+      @include g.mq(tab) {
+        top: 530px;
       }
     }
   }
@@ -222,63 +276,80 @@
       }
     }
     &__sub {
-      background-color: g.$cWhite;
-      box-sizing: border-box;
-      text-align: center;
-      display: inline-block;
-      width: 65%;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2;
-      transform: translateY(10px);
-      font-size: 11px;
-      font-weight: 900;
-      color: g.$cNavy;
-      line-height: 2;
-      @include g.mq(sp) {
-        width: 45%;
-        font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
+      &__inner {
+        background-color: g.$cWhite;
+        box-sizing: border-box;
+        text-align: center;
+        display: inline-block;
+        width: 65%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        transform: translateY(10px);
+        font-size: 11px;
+        font-weight: 900;
+        color: g.$cNavy;
+        line-height: 2;
+        @include g.mq(sp) {
+          width: 45%;
+          font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
+        }
+        @include g.mq(tab) {
+          width: 260px;
+          font-size: clamp(0.938rem, 0.806rem + 0.27vw, 1.063rem);
+        }
       }
     }
     &__main {
-      display: inline-block;
-      background-color: g.$cYellow;
-      width: 80%;
-      position: relative;
-      top: 0;
-      padding: 4% 5.5% 2%;
-      border-radius: 50px;
-      border: 2px solid g.$cWhite;
-      @include g.mq(sp) {
-        width: 62.5%;
-        padding: 3% 0 1%;
-        border: 3px solid g.$cWhite;
-      }
-      &__txt {
-        text-align: center;
-        font-size: 11px;
-        font-weight: 500;
+      &__inner {
+        display: inline-block;
+        background-color: g.$cYellow;
+        width: 80%;
+        position: relative;
+        top: 0;
+        padding: 4% 5.5% 2%;
+        border-radius: 50px;
+        border: 2px solid g.$cWhite;
         @include g.mq(sp) {
-          font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
+          width: 62.5%;
+          padding: 3% 0 1%;
+          border: 3px solid g.$cWhite;
         }
-      }
-      &__con {
-        margin-top: 2.5%;
-        display: flex;
-        gap: 2.5%;
-        justify-content: center;
-        align-items: center;
-        &__act {
-          font-size: clamp(0.813rem, -0.278rem + 5.45vw, 1rem);
+        @include g.mq(tab) {
+          width: 390px;
+        }
+        &__txt {
+          text-align: center;
+          font-size: 11px;
+          font-weight: 500;
           @include g.mq(sp) {
-            font-size: clamp(1rem, 0.375rem + 2.08vw, 1.375rem);
+            font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
+          }
+          @include g.mq(tab) {
+            font-size: clamp(0.938rem, 0.806rem + 0.27vw, 1.063rem);
           }
         }
-        &__icon {
-          width: 10%;
-          & img {
-            width: 100%;
-            display: block;
+        &__con {
+          margin-top: 2.5%;
+          display: flex;
+          gap: 2.5%;
+          justify-content: center;
+          align-items: center;
+          &__act {
+            font-size: clamp(0.813rem, -0.278rem + 5.45vw, 1rem);
+            @include g.mq(sp) {
+              font-size: clamp(1rem, 0.375rem + 2.08vw, 1.375rem);
+            }
+            @include g.mq(tab) {
+              font-size: clamp(1.375rem, 1.178rem + 0.41vw, 1.563rem);
+            }
+          }
+          &__icon {
+            width: 10%;
+            & img {
+              width: 100%;
+              display: block;
+            }
           }
         }
       }

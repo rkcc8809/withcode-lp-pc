@@ -12,7 +12,7 @@ $('.slider').slick({
   dots: true, // 下部ドットナビゲーションの表示
   responsive: [
     {
-      breakpoint: 769, // モニターの横幅が769px以下の場合
+      breakpoint: 1025, // モニターの横幅が769px以下の場合
       settings: {
         slidesToShow: 2, // スライド画面に2つ表示
         slidesToScroll: 2, // 1回のスクロールで2つの画像を表示
