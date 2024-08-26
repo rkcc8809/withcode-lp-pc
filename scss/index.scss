@@ -131,7 +131,7 @@
           right: 25%;
         }
         @include g.mq(pc) {
-          right: 27.5%;
+          right: 23.5%;
         }
         & img {
           width: clamp(8.75rem, -0.341rem + 45.45vw, 11.875rem);
@@ -148,7 +148,7 @@
             top: -22px;
           }
           @include g.mq(pc) {
-            width: clamp(17.5rem, 8.734rem + 13.68vw, 21.563rem);
+            width: clamp(18.75rem, 10.658rem + 12.63vw, 22.5rem);
             top: -34px;
           }
           @include g.mq(pc-l) {
@@ -168,7 +168,7 @@
           top: 16%;
         }
         @include g.mq(pc) {
-          right: 8%;
+          right: 5%;
         }
         & img {
           width: clamp(12.5rem, -2.045rem + 72.73vw, 17.5rem);
@@ -186,7 +186,7 @@
             top: -28px;
           }
           @include g.mq(pc) {
-            width: clamp(25.625rem, 12.138rem + 21.05vw, 31.875rem);
+            width: clamp(27.813rem, 16.349rem + 17.89vw, 33.125rem);
             top: -44px;
           }
           @include g.mq(pc-l) {
@@ -204,6 +204,9 @@
         @include g.mq(tab) {
           display: block;
           font-size: clamp(1.75rem, 0.961rem + 1.64vw, 2.5rem);
+        }
+        @include g.mq(pc) {
+          letter-spacing: 3px;
         }
       }
     }
@@ -231,7 +234,9 @@
         right: 5%;
       }
       @include g.mq(pc) {
-        right: 8%;
+        right: 3%;
+        letter-spacing: 3px;
+        padding: 1.25% 4%;
       }
     }
     &__circle {
@@ -251,8 +256,7 @@
       }
       @include g.mq(pc) {
         justify-content: flex-end;
-        margin-right: 8%;
-        width: 91%;
+        width: 93%;
         bottom: 27%;
       }
       &__block {
@@ -271,6 +275,10 @@
         @include g.mq(tab) {
           width: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
           height: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
+        }
+        @include g.mq(pc) {
+          width: clamp(9.375rem, 6.678rem + 4.21vw, 10.625rem);
+          height: clamp(9.375rem, 6.678rem + 4.21vw, 10.625rem);
         }
         &::before {
           content: "";
@@ -293,6 +301,9 @@
           @include g.mq(tab) {
             font-size: clamp(1.125rem, 0.862rem + 0.55vw, 1.375rem);
           }
+          @include g.mq(pc) {
+            font-size: clamp(1rem, 0.461rem + 0.84vw, 1.25rem);
+          }
         }
       }
     }
@@ -307,7 +318,7 @@
       }
       @include g.mq(pc) {
         top: clamp(33.125rem, 21.661rem + 17.89vw, 38.438rem);
-        margin-right: clamp(8.125rem, 7.586rem + 0.84vw, 8.375rem);
+        margin-right: 80px;
       }
     }
   }
@@ -373,7 +384,9 @@
           padding: 2.5% 7.5% 1%;
         }
         @include g.mq(pc-l) {
-          padding: 2% 7.5% 1%;
+          width: 470px;
+          height: 116px;
+          padding: 0;
         }
         &__txt {
           text-align: center;
@@ -384,6 +397,9 @@
           }
           @include g.mq(tab) {
             font-size: clamp(0.938rem, 0.806rem + 0.27vw, 1.063rem);
+          }
+          @include g.mq(pc-l) {
+            margin-top: 6%;
           }
         }
         &__con {
@@ -411,6 +427,9 @@
             width: 13%;
             @include g.mq(pc) {
               width: 15%;
+            }
+            @include g.mq(pc-l) {
+              width: 10%;
             }
             & img {
               width: 100%;
@@ -440,6 +459,6 @@
     margin-right: clamp(5rem, 1.898rem + 4.84vw, 6.438rem);
   }
   @include g.mq(pc-l) {
-    margin-right: clamp(6.5rem, 3.365rem + 3.34vw, 7.375rem);
+    margin-right: 100px;
   }
 }
