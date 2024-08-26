@@ -2750,11 +2750,11 @@
               font-size: clamp(1.563rem, 1.234rem + 0.68vw, 1.875rem);
             }
             @include g.mq(pc) {
-              margin-left: clamp(25rem, -8.717rem + 52.63vw, 40.625rem);
+              margin-left: clamp(21.25rem, -12.467rem + 52.63vw, 36.875rem);
               margin-top: -10px;
             }
             @include g.mq(pc-l) {
-              margin-left: clamp(40.625rem, -24.305rem + 69.21vw, 58.75rem);
+              margin-left: clamp(36.875rem, -19.099rem + 59.67vw, 52.5rem);
             }
             & span {
               display: inline-block;
