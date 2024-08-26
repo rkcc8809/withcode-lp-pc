@@ -89,12 +89,17 @@ li {
 }
 @media screen and (min-width: 481px) {
   .__inner {
-    width: 85%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .__inner {
+    width: 75%;
   }
 }
 @media screen and (min-width: 1025px) {
   .__inner {
-    width: 75%;
+    width: 65%;
   }
 }
 
@@ -179,6 +184,11 @@ li {
   .top-wrap__bg {
     left: 0;
     width: 60%;
+  }
+}
+@media screen and (min-width: 1501px) {
+  .top-wrap__bg {
+    width: 45%;
   }
 }
 .top-wrap__bg img {

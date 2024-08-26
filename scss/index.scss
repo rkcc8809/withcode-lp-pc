@@ -31,10 +31,13 @@
   width: 90%;
   margin: 0 auto;
   @include g.mq(sp) {
-    width: 85%;
+    width: 80%;
+  }
+  @include g.mq(tab) {
+    width: 75%;
   }
   @include g.mq(pc) {
-    width: 75%;
+    width: 65%;
   }
 }
 
@@ -104,6 +107,9 @@
       @include g.mq(pc) {
         left: 0;
         width: 60%;
+      }
+      @include g.mq(pc-l) {
+        width: 45%;
       }
       & img {
         width: 100%;
