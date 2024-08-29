@@ -90,26 +90,31 @@
   @include g.mq(pc) {
     height: clamp(43.75rem, 28.914rem + 23.16vw, 50.625rem);
   }
+  @include g.mq(pc-l) {
+    height: clamp(50.625rem, 12.563rem + 40.57vw, 61.25rem);
+  }
   &-wrap {
     &__bg {
-      width: 100%;
+      width: clamp(20rem, 7.5rem + 62.5vw, 26.25rem);
       position: absolute;
       z-index: -1;
       bottom: 0;
       left: 0;
       overflow: hidden;
       @include g.mq(sp) {
-        left: -7.5%;
+        left: -13.5%;
+        width: clamp(32.5rem, 8.408rem + 80.14vw, 46.875rem);
       }
       @include g.mq(tab) {
-        width: 80%;
+        left: -6.5%;
+        width: clamp(45rem, 35.576rem + 19.61vw, 48.125rem);
       }
       @include g.mq(pc) {
         left: 0;
-        width: 60%;
+        width: clamp(47.5rem, 28.618rem + 29.47vw, 56.25rem);
       }
       @include g.mq(pc-l) {
-        width: 45%;
+        width: clamp(56.25rem, 15.949rem + 42.96vw, 67.5rem);
       }
       & img {
         width: 100%;
@@ -135,24 +140,25 @@
         }
         & img {
           width: clamp(8.75rem, -0.341rem + 45.45vw, 11.875rem);
-          position: relative;
-          z-index: -1;
-          top: -10px;
-          left: 5px;
+          margin-top: -6%;
           @include g.mq(sp) {
             width: clamp(11.875rem, 6.667rem + 17.36vw, 15rem);
-            top: -14px;
+            margin-top: -4%;
           }
           @include g.mq(tab) {
             width: clamp(15rem, 7.461rem + 15.69vw, 17.5rem);
-            top: -22px;
           }
           @include g.mq(pc) {
             width: clamp(18.75rem, 10.658rem + 12.63vw, 22.5rem);
-            top: -34px;
+          }
+        }
+        & p {
+          transform: rotate(-5deg) translateY(5%);
+          @include g.mq(sp) {
+            transform: rotate(-5deg) translateY(15%);
           }
           @include g.mq(pc-l) {
-            top: -42px;
+            transform: rotate(-5deg) translateY(35%);
           }
         }
       }
@@ -173,24 +179,24 @@
         & img {
           width: clamp(12.5rem, -2.045rem + 72.73vw, 17.5rem);
           height: auto;
-          position: relative;
-          z-index: -1;
-          top: -18px;
-          left: 0;
+          margin-top: -6%;
           @include g.mq(sp) {
             width: clamp(17.5rem, 9.688rem + 26.04vw, 22.188rem);
-            top: -18px;
+            margin-top: -4%;
           }
           @include g.mq(tab) {
             width: clamp(22.188rem, 11.821rem + 21.57vw, 25.625rem);
-            top: -28px;
           }
           @include g.mq(pc) {
             width: clamp(27.813rem, 16.349rem + 17.89vw, 33.125rem);
-            top: -44px;
+          }
+        }
+        & p {
+          @include g.mq(sp) {
+            transform: rotate(-5deg) translateY(15%);
           }
           @include g.mq(pc-l) {
-            top: -56px;
+            transform: rotate(-5deg) translateY(35%);
           }
         }
       }
@@ -269,12 +275,12 @@
         border-radius: 50%;
         position: relative;
         @include g.mq(sp) {
-          width: clamp(6.25rem, 20.83vw, 10rem);
-          height: clamp(6.25rem, 20.83vw, 10rem);
+          width: clamp(6.25rem, 1.013rem + 17.42vw, 9.375rem);
+          height: clamp(6.25rem, 1.013rem + 17.42vw, 9.375rem);
         }
         @include g.mq(tab) {
-          width: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
-          height: clamp(10rem, 8.356rem + 3.42vw, 11.563rem);
+          width: clamp(9.375rem, 8.06rem + 2.74vw, 10.625rem);
+          height: clamp(9.375rem, 8.06rem + 2.74vw, 10.625rem);
         }
         @include g.mq(pc) {
           width: clamp(9.375rem, 6.678rem + 4.21vw, 10.625rem);
@@ -297,6 +303,7 @@
           line-height: 1.2;
           @include g.mq(sp) {
             font-size: clamp(0.688rem, -0.042rem + 2.43vw, 1.125rem);
+            line-height: 1.4;
           }
           @include g.mq(tab) {
             font-size: clamp(1.125rem, 0.862rem + 0.55vw, 1.375rem);
@@ -319,6 +326,9 @@
       @include g.mq(pc) {
         top: clamp(33.125rem, 21.661rem + 17.89vw, 38.438rem);
         margin-right: 80px;
+      }
+      @include g.mq(pc-l) {
+        top: clamp(38.438rem, 13.809rem + 26.25vw, 45.313rem);
       }
     }
   }
@@ -354,15 +364,16 @@
         color: g.$cNavy;
         line-height: 2;
         @include g.mq(sp) {
-          transform: translateY(16px);
+          transform: translateY(52%);
           font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
         }
         @include g.mq(tab) {
           font-size: clamp(0.938rem, 0.806rem + 0.27vw, 1.063rem);
         }
         @include g.mq(pc) {
-          transform: translateY(20px);
+          transform: translateY(55%);
           padding: 0 2.5%;
+          font-size: clamp(0.875rem, 0.605rem + 0.42vw, 1rem);
         }
       }
     }
@@ -391,12 +402,16 @@
         &__txt {
           text-align: center;
           font-size: clamp(0.563rem, 0.313rem + 1.25vw, 0.688rem);
-          font-weight: 500;
+          font-weight: 700;
+          padding-top: 4.5px;
           @include g.mq(sp) {
             font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
           }
           @include g.mq(tab) {
             font-size: clamp(0.938rem, 0.806rem + 0.27vw, 1.063rem);
+          }
+          @include g.mq(pc) {
+            font-size: clamp(0.813rem, 0.408rem + 0.63vw, 1rem);
           }
           @include g.mq(pc-l) {
             margin-top: 6%;
@@ -421,6 +436,9 @@
             }
             @include g.mq(tab) {
               font-size: clamp(1.375rem, 1.178rem + 0.41vw, 1.563rem);
+            }
+            @include g.mq(pc) {
+              font-size: clamp(1.25rem, 0.845rem + 0.63vw, 1.438rem);
             }
           }
           &__icon {

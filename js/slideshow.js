@@ -34,12 +34,18 @@ $('.case-wrap__con__scroll__list').slick({
     speed: 5000, //スライドが流れるスピード
     arrows: false, //左右の矢印を非表示
     swipe: false, //スワイプ禁止
-    slidesToShow: 2, //表示するスライドの数
+    slidesToShow: 3, //表示するスライドの数
     cssEase: 'linear', //画像切り替えのアニメーション"linearは等速"
     pauseOnFocus: true, //フォーカスしたら止める
     pauseOnHover: true, //マウスホバーしたら止める
   infinite: true, // 無限ループ
   responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
     {
       breakpoint: 481,
       settings: {
