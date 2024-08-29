@@ -474,7 +474,7 @@
 
 .top-wrap__btn .cta-anchor__sub__inner {
   @include g.mq(pc) {
-    margin-right: clamp(5rem, 1.898rem + 4.84vw, 6.438rem);
+    margin-right: clamp(4.5rem, 0.724rem + 5.89vw, 6.25rem);
   }
   @include g.mq(pc-l) {
     margin-right: 100px;

@@ -554,7 +554,7 @@
             font-size: clamp(1.375rem, 0.056rem + 2.75vw, 1.813rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(1.563rem, 0.618rem + 1.47vw, 2rem);
+            font-size: clamp(1.5rem, 0.961rem + 0.84vw, 1.75rem);
             padding: 1.5%;
           }
         }
@@ -569,7 +569,7 @@
             font-size: clamp(1.375rem, 0.056rem + 2.75vw, 1.813rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(1.563rem, 0.618rem + 1.47vw, 2rem);
+            font-size: clamp(1.5rem, 0.961rem + 0.84vw, 1.75rem);
           }
         }
       }
@@ -1743,7 +1743,7 @@
 
 .cv-wrap__intro__cta .cta-anchor__sub {
   @include g.mq(pc) {
-    margin-left: clamp(4.063rem, 1.77rem + 3.58vw, 5.125rem);
+    margin-left: clamp(3.625rem, 0.928rem + 4.21vw, 4.875rem);
   }
   @include g.mq(pc-l) {
     margin-left: 112px;
@@ -1958,7 +1958,7 @@
             font-size: clamp(1.563rem, 0.905rem + 1.37vw, 2.188rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(1.25rem, -0.099rem + 2.11vw, 1.875rem);
+            font-size: clamp(1.25rem, 0.171rem + 1.68vw, 1.75rem);
           }
           & span {
             font-size: 25px;
@@ -1971,7 +1971,7 @@
               font-size: clamp(2.188rem, 1.201rem + 2.05vw, 3.125rem);
             }
             @include g.mq(pc) {
-              font-size: clamp(1.875rem, -0.148rem + 3.16vw, 2.813rem);
+              font-size: clamp(1.875rem, 0.526rem + 2.11vw, 2.5rem);
             }
           }
         }
@@ -2210,6 +2210,7 @@
   }
   @include g.mq(pc) {
     font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+    padding: 0.25% 0 0.5%;
   }
 }
 
@@ -2428,7 +2429,8 @@
           font-size: clamp(2.188rem, 1.201rem + 2.05vw, 3.125rem);
         }
         @include g.mq(pc) {
-          font-size: clamp(2.188rem, 0.839rem + 2.11vw, 2.813rem);
+          font-size: clamp(1.875rem, 0.931rem + 1.47vw, 2.313rem);
+          margin: 2.5% 0;
         }
         & span {
           display: inline-block;
@@ -2445,7 +2447,7 @@
             font-size: clamp(3.125rem, 1.481rem + 3.42vw, 4.688rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(2.813rem, 0.789rem + 3.16vw, 3.75rem);
+            font-size: clamp(2.813rem, 2.138rem + 1.05vw, 3.125rem);
           }
         }
         & span:nth-last-of-type(1) {
@@ -2499,6 +2501,9 @@
         border-top: clamp(0.813rem, -0.13rem + 3.14vw, 1.375rem) solid
           g.$cYellow;
       }
+      @include g.mq(pc) {
+        margin: 3.5% auto 2%;
+      }
     }
     &__mess {
       text-align: center;
@@ -2514,7 +2519,7 @@
           font-size: clamp(1.375rem, 0.52rem + 1.78vw, 2.188rem);
         }
         @include g.mq(pc) {
-          font-size: clamp(1.25rem, -0.099rem + 2.11vw, 1.875rem);
+          font-size: clamp(1.25rem, 0.576rem + 1.05vw, 1.563rem);
         }
         & span {
           font-size: 22px;
@@ -2527,8 +2532,7 @@
             font-size: clamp(2.188rem, 1.201rem + 2.05vw, 3.125rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(2.188rem, 0.839rem + 2.11vw, 2.813rem);
-            letter-spacing: 3px;
+            font-size: clamp(1.75rem, 1.211rem + 0.84vw, 2rem);
           }
         }
       }
@@ -2543,7 +2547,8 @@
           font-size: clamp(1.375rem, 0.52rem + 1.78vw, 2.188rem);
         }
         @include g.mq(pc) {
-          font-size: clamp(1.25rem, -0.099rem + 2.11vw, 1.875rem);
+          font-size: clamp(1.25rem, 0.576rem + 1.05vw, 1.563rem);
+          margin-top: 2%;
         }
         & span {
           font-size: 20px;
@@ -2561,8 +2566,8 @@
             height: clamp(2.375rem, 0.49rem + 3.92vw, 3rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(2.188rem, 0.839rem + 2.11vw, 2.813rem);
-            height: clamp(2.563rem, 1.079rem + 2.32vw, 3.25rem);
+            font-size: clamp(1.75rem, 1.211rem + 0.84vw, 2rem);
+            height: clamp(2.063rem, 1.523rem + 0.84vw, 2.313rem);
           }
         }
       }
@@ -2581,6 +2586,7 @@
   }
   @include g.mq(pc) {
     font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+    padding: 0.25% 0 0.5%;
   }
 }
 
@@ -2641,7 +2647,7 @@
             }
             @include g.mq(pc) {
               padding: 0.3em 1.5em;
-              font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
+              font-size: clamp(1.438rem, 0.763rem + 1.05vw, 1.75rem);
             }
             & span {
               font-size: 25px;
@@ -2653,7 +2659,7 @@
                 font-size: clamp(2.188rem, 1.201rem + 2.05vw, 3.125rem);
               }
               @include g.mq(pc) {
-                font-size: clamp(2.188rem, 0.839rem + 2.11vw, 2.813rem);
+                font-size: clamp(2rem, 0.921rem + 1.68vw, 2.5rem);
               }
             }
           }
@@ -2690,7 +2696,7 @@
                   font-size: clamp(1.563rem, 0.905rem + 1.37vw, 2.188rem);
                 }
                 @include g.mq(pc) {
-                  font-size: clamp(1.438rem, 0.493rem + 1.47vw, 1.875rem);
+                  font-size: clamp(1.438rem, 0.763rem + 1.05vw, 1.75rem);
                 }
                 & span {
                   font-size: 25px;
@@ -2703,7 +2709,7 @@
                     font-size: clamp(2.188rem, 1.201rem + 2.05vw, 3.125rem);
                   }
                   @include g.mq(pc) {
-                    font-size: clamp(1.875rem, -0.148rem + 3.16vw, 2.813rem);
+                    font-size: clamp(1.875rem, 0.931rem + 1.47vw, 2.313rem);
                   }
                 }
               }
@@ -2795,7 +2801,7 @@
             width: clamp(20rem, 10.576rem + 19.61vw, 23.125rem);
           }
           @include g.mq(pc) {
-            width: clamp(19.375rem, 4.539rem + 23.16vw, 26.25rem);
+            width: clamp(19.375rem, 10.609rem + 13.68vw, 23.438rem);
           }
           & p {
             font-size: 12px;
@@ -2829,7 +2835,7 @@
             }
             @include g.mq(pc) {
               padding: 1%;
-              font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+              font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
             }
           }
         }
@@ -3146,6 +3152,9 @@
 
       & p {
         margin: 2% 0;
+        @include g.mq(pc) {
+          margin: 1.5% 0;
+        }
       }
       &__first {
         font-size: 15px;
@@ -3254,10 +3263,11 @@
     width: 140px;
   }
   @include g.mq(tab) {
-    font-size: clamp(0.875rem, 0.744rem + 0.27vw, 1rem);
+    font-size: 1rem;
   }
   @include g.mq(pc) {
     width: 168px;
+    font-size: clamp(1rem, 0.73rem + 0.42vw, 1.125rem);
   }
 }
 
@@ -3280,7 +3290,10 @@
     padding: 3% 0;
   }
   @include g.mq(tab) {
-    font-size: clamp(1.063rem, 0.865rem + 0.41vw, 1.25rem);
+    font-size: 1.25rem;
+  }
+  @include g.mq(pc) {
+    font-size: clamp(1.25rem, 0.98rem + 0.42vw, 1.375rem);
   }
 }
 
@@ -3293,7 +3306,10 @@
     padding: 2.5% 0;
   }
   @include g.mq(tab) {
-    font-size: clamp(0.844rem, 0.745rem + 0.21vw, 0.938rem);
+    font-size: 1.125rem;
+  }
+  @include g.mq(pc) {
+    font-size: clamp(1.125rem, 0.855rem + 0.42vw, 1.25rem);
   }
 }
 
@@ -3317,10 +3333,11 @@ td {
     font-size: clamp(0.75rem, 0.541rem + 0.7vw, 0.875rem);
   }
   @include g.mq(tab) {
-    font-size: clamp(0.75rem, 0.684rem + 0.14vw, 0.813rem);
+    font-size: 0.875rem;
     width: 220px;
   }
   @include g.mq(pc) {
+    font-size: clamp(0.875rem, 0.605rem + 0.42vw, 1rem);
     width: 250px;
   }
 }
@@ -3435,7 +3452,7 @@ td {
           font-size: clamp(1.563rem, 0.62rem + 1.96vw, 1.875rem);
         }
         @include g.mq(pc) {
-          font-size: clamp(1.688rem, 0.609rem + 1.68vw, 2.188rem);
+          font-size: clamp(1.688rem, 1.013rem + 1.05vw, 2rem);
         }
         & span {
           color: g.$cWhite;
@@ -3459,6 +3476,7 @@ td {
       }
       @include g.mq(pc) {
         font-size: clamp(0.875rem, 0.336rem + 0.84vw, 1.125rem);
+        margin-top: 6%;
       }
       & span {
         font-size: 16px;
