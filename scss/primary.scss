@@ -3624,6 +3624,12 @@ td {
       }
       &__logo {
         width: 50%;
+        @include g.mq(sp) {
+          width: 40%;
+        }
+        @include g.mq(tab) {
+          width: 35%;
+        }
         @include g.mq(pc) {
           width: 20%;
         }

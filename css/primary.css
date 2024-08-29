@@ -4827,6 +4827,16 @@ td {
 .footer-wrap__link__logo {
   width: 50%;
 }
+@media screen and (min-width: 481px) {
+  .footer-wrap__link__logo {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer-wrap__link__logo {
+    width: 35%;
+  }
+}
 @media screen and (min-width: 1025px) {
   .footer-wrap__link__logo {
     width: 20%;
