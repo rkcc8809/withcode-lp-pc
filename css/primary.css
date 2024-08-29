@@ -2004,12 +2004,12 @@ li {
 }
 @media screen and (min-width: 769px) {
   .cv-wrap__head__second {
-    font-size: clamp(1.875rem, 0.889rem + 2.05vw, 2.813rem);
+    font-size: clamp(1.5rem, 0.746rem + 1.57vw, 1.75rem);
   }
 }
 @media screen and (min-width: 1025px) {
   .cv-wrap__head__second {
-    font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+    font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
   }
 }
 .cv-wrap__head__second span {
@@ -2022,12 +2022,12 @@ li {
 }
 @media screen and (min-width: 769px) {
   .cv-wrap__head__second span {
-    font-size: clamp(3.438rem, 2.123rem + 2.74vw, 4.688rem);
+    font-size: clamp(2.5rem, 0.615rem + 3.92vw, 3.125rem);
   }
 }
 @media screen and (min-width: 1025px) {
   .cv-wrap__head__second span {
-    font-size: clamp(2.813rem, 0.789rem + 3.16vw, 3.75rem);
+    font-size: clamp(2.813rem, 1.464rem + 2.11vw, 3.438rem);
   }
 }
 .cv-wrap__guide__block__ttl {
@@ -2135,7 +2135,7 @@ li {
 }
 @media screen and (min-width: 1025px) {
   .cv-wrap__guide__block__ttl__txt {
-    font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+    font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
   }
 }
 .cv-wrap__guide__block__body {

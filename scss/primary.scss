@@ -1509,10 +1509,10 @@
           font-size: clamp(1.25rem, 0.622rem + 2.09vw, 1.625rem);
         }
         @include g.mq(tab) {
-          font-size: clamp(1.875rem, 0.889rem + 2.05vw, 2.813rem);
+          font-size: clamp(1.5rem, 0.746rem + 1.57vw, 1.75rem);
         }
         @include g.mq(pc) {
-          font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+          font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
         }
         & span {
           font-size: 35px;
@@ -1520,10 +1520,10 @@
             font-size: clamp(2.188rem, 1.14rem + 3.48vw, 2.813rem);
           }
           @include g.mq(tab) {
-            font-size: clamp(3.438rem, 2.123rem + 2.74vw, 4.688rem);
+            font-size: clamp(2.5rem, 0.615rem + 3.92vw, 3.125rem);
           }
           @include g.mq(pc) {
-            font-size: clamp(2.813rem, 0.789rem + 3.16vw, 3.75rem);
+            font-size: clamp(2.813rem, 1.464rem + 2.11vw, 3.438rem);
           }
         }
       }
@@ -1595,7 +1595,7 @@
               font-size: clamp(1.5rem, 0.746rem + 1.57vw, 1.75rem);
             }
             @include g.mq(pc) {
-              font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
+              font-size: clamp(1.563rem, 0.888rem + 1.05vw, 1.875rem);
             }
           }
         }
