@@ -203,6 +203,9 @@ li {
   height: auto;
   display: block;
 }
+.top-wrap__bg.__pc-img img {
+  width: 95%;
+}
 .top-wrap__ttl {
   position: absolute;
   text-align: right;

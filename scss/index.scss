@@ -121,6 +121,11 @@
         height: auto;
         display: block;
       }
+      &.__pc-img {
+        & img {
+          width: 95%;
+        }
+      }
     }
     &__ttl {
       position: absolute;
