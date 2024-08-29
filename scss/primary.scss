@@ -177,6 +177,7 @@
     border-bottom: 2px dashed g.$cWhite;
     @include g.mq(sp) {
       border-bottom: 3px dashed g.$cWhite;
+      bottom: 0;
     }
   }
   &-small {
