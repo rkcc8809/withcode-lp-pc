@@ -177,7 +177,7 @@
     border-bottom: 2px dashed g.$cWhite;
     @include g.mq(sp) {
       border-bottom: 3px dashed g.$cWhite;
-      bottom: 0;
+      bottom: 2px;
     }
   }
   &-small {
@@ -1592,7 +1592,7 @@
               font-size: clamp(0.938rem, -0.11rem + 3.48vw, 1.563rem);
             }
             @include g.mq(tab) {
-              font-size: clamp(1.688rem, 0.504rem + 2.46vw, 2.813rem);
+              font-size: clamp(1.5rem, 0.746rem + 1.57vw, 1.75rem);
             }
             @include g.mq(pc) {
               font-size: clamp(1.563rem, 0.214rem + 2.11vw, 2.188rem);
@@ -3251,11 +3251,10 @@
   @include g.mq(sp) {
     font-size: clamp(0.875rem, 0.666rem + 0.7vw, 1rem);
     line-height: 6;
-    width: 120px;
+    width: 140px;
   }
   @include g.mq(tab) {
     font-size: clamp(0.875rem, 0.744rem + 0.27vw, 1rem);
-    width: 140px;
   }
   @include g.mq(pc) {
     width: 168px;
@@ -3433,7 +3432,7 @@ td {
           font-size: clamp(1rem, 0.057rem + 3.14vw, 1.563rem);
         }
         @include g.mq(tab) {
-          font-size: clamp(1.875rem, 0.889rem + 2.05vw, 2.813rem);
+          font-size: clamp(1.563rem, 0.62rem + 1.96vw, 1.875rem);
         }
         @include g.mq(pc) {
           font-size: clamp(1.688rem, 0.609rem + 1.68vw, 2.188rem);
@@ -3501,7 +3500,7 @@ td {
         margin: 6.5% 0;
       }
       @include g.mq(tab) {
-        font-size: clamp(1.563rem, 0.905rem + 1.37vw, 2.188rem);
+        font-size: clamp(1.313rem, 0.936rem + 0.78vw, 1.438rem);
       }
       @include g.mq(pc) {
         margin: 5% 0;
