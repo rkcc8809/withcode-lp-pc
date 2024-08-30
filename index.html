@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta name="robots" content="noindex,nofollow" />
+    <!-- <meta name="robots" content="noindex,nofollow" /> -->
     <meta charset="UTF-8" />
     <title>WithCode</title>
     <meta name="description" content="WithCodeのLPです。" />
@@ -282,9 +282,18 @@
                     </p>
                     <div class="greet-wrap__con__left__name">
                       <p>株式会社Losta 代表取締役</p>
-                      <div class="greet-wrap__con__left__name__img">
+                      <div class="greet-wrap__con__left__name__img __sp-img">
                         <img
                           src="img/signiture.webp"
+                          decoding="async"
+                          loading="async"
+                          fetchpriority="low"
+                          alt="代表サイン"
+                        />
+                      </div>
+                      <div class="greet-wrap__con__left__name__img __pc-img">
+                        <img
+                          src="img/signiture-pc.webp"
                           decoding="async"
                           loading="async"
                           fetchpriority="low"
@@ -1609,9 +1618,18 @@
                       エラーが解決できずに<br />
                       先に進むことができない...
                     </p>
-                    <div class="difficult-wrap__con__block__img">
+                    <div class="difficult-wrap__con__block__img __sp-img">
                       <img
                         src="img/difficult-1.webp"
+                        decoding="async"
+                        loading="async"
+                        fetchpriority="low"
+                        alt="プログラミング学習の難しい理由1"
+                      />
+                    </div>
+                    <div class="difficult-wrap__con__block__img __pc-img">
+                      <img
+                        src="img/difficult-1-pc.webp"
                         decoding="async"
                         loading="async"
                         fetchpriority="low"
@@ -1624,9 +1642,22 @@
                       作成したデザインの<br />
                       良し悪しが判断できない...
                     </p>
-                    <div class="difficult-wrap__con__block__img __second">
+                    <div
+                      class="difficult-wrap__con__block__img __second __sp-img"
+                    >
                       <img
                         src="img/difficult-2.webp"
+                        decoding="async"
+                        loading="async"
+                        fetchpriority="low"
+                        alt="プログラミング学習の難しい理由2"
+                      />
+                    </div>
+                    <div
+                      class="difficult-wrap__con__block__img __second __pc-img"
+                    >
+                      <img
+                        src="img/difficult-2-pc.webp"
                         decoding="async"
                         loading="async"
                         fetchpriority="low"
@@ -1639,9 +1670,22 @@
                       ひと通り学習は終わったが、<br />
                       案件が全く取れない...
                     </p>
-                    <div class="difficult-wrap__con__block__img __third">
+                    <div
+                      class="difficult-wrap__con__block__img __third __sp-img"
+                    >
                       <img
                         src="img/difficult-3.webp"
+                        decoding="async"
+                        loading="async"
+                        fetchpriority="low"
+                        alt="プログラミング学習の難しい理由3"
+                      />
+                    </div>
+                    <div
+                      class="difficult-wrap__con__block__img __third __pc-img"
+                    >
+                      <img
+                        src="img/difficult-3-pc.webp"
                         decoding="async"
                         loading="async"
                         fetchpriority="low"
@@ -2224,12 +2268,12 @@
             <section class="safety" id="safety">
               <div class="safety-wrap __inner">
                 <div class="safety-wrap__ttl">
-                  <p class="safety-wrap__ttl__first">
-                    一切料金はいただきません！
-                  </p>
-                  <p class="safety-wrap__ttl__second">
-                    安心してお申し込みください！
-                  </p>
+                  <div class="safety-wrap__ttl__first">
+                    <p>一切料金はいただきません！</p>
+                  </div>
+                  <div class="safety-wrap__ttl__second">
+                    <p>安心してお申し込みください！</p>
+                  </div>
                 </div>
                 <p class="safety-wrap__txt">
                   無料カウンセリングでは一人ひとりに寄り添って親身に話を進めていきます。<br />WithCodeでは無理な勧誘等は一切しませんので、気軽にお申し込みください！
@@ -2656,13 +2700,15 @@
         </div>
       </div>
     </div>
-    <script src="js/lazy.js" defer></script>
     <script src="js/jquery-3.7.1.min.js" defer></script>
     <script src="slick/slick.min.js" defer></script>
+    <script src="js/jquery.matchHeight-min.js" async></script>
+    <script src="js/lazy.js" defer></script>
+    <script src="js/observe.js" async></script>
     <script src="scrollhint/scroll-hint.min.js" defer></script>
-    <script type="text/javascript" src="js/number.js" defer></script>
+    <script type="text/javascript" src="js/number.js" async></script>
     <script type="text/javascript" src="js/slideshow.js" defer></script>
-    <script type="text/javascript" src="js/scroll.js" defer></script>
-    <script type="text/javascript" src="js/timeline.js" defer></script>
+    <script type="text/javascript" src="js/scroll.js" async></script>
+    <script type="text/javascript" src="js/timeline.js" async></script>
   </body>
 </html>

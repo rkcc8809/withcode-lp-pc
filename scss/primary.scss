@@ -240,6 +240,9 @@
           margin-top: 7.5%;
           width: fit-content;
           margin-left: auto;
+          @include g.mq(sp) {
+            text-align: right;
+          }
           & p {
             font-size: 12px;
             color: g.$cBlack;
@@ -257,11 +260,15 @@
           &__img {
             margin-top: 3.5%;
             width: 60%;
-            @include g.mq(sp) {
-              width: 55%;
-            }
             & img {
               width: 100%;
+            }
+            &.__pc-img {
+              width: 50%;
+              margin-top: 4.5%;
+              & img {
+                width: clamp(5.625rem, 2.483rem + 10.45vw, 7.5rem);
+              }
             }
           }
         }
@@ -771,10 +778,6 @@
   padding: 2.5px;
   width: 10px;
   height: 10px;
-  @include g.mq(pc) {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 .slick-dots li button::before {
@@ -789,7 +792,7 @@
   padding: 7.5% 0 2.5%;
   background-color: g.$cBlue-Clear-2;
   @include g.mq(pc) {
-    padding: 5.5% 0 2.5%;
+    padding: 5.5% 0 0;
   }
   &-wrap {
     &__ttl {
@@ -846,6 +849,9 @@
           width: 100%;
 
           &__item {
+            @include g.mq(sp) {
+              margin-right: 30px;
+            }
             & img {
               width: 90%;
               display: block;
@@ -1169,7 +1175,7 @@
               & p {
                 width: 100%;
                 font-size: 12px;
-                color: g.$cGray-3;
+                color: g.$cBlack-2;
                 margin: 5% 0;
                 font-weight: 500;
                 @include g.mq(sp) {
@@ -1269,19 +1275,6 @@
           border-radius: 15px 15px 0 0;
           position: relative;
           padding: 3.5%;
-          @include g.mq(sp) {
-            height: clamp(8.813rem, 1.899rem + 23vw, 12.938rem);
-          }
-          @include g.mq(tab) {
-            height: clamp(12.875rem, 4.582rem + 17.25vw, 15.625rem);
-          }
-          @include g.mq(pc) {
-            height: clamp(10.063rem, 1.97rem + 12.63vw, 13.813rem);
-          }
-          @include g.mq(pc-l) {
-            // height: clamp(13.875rem, 5.591rem + 8.83vw, 16.188rem);
-            height: clamp(13.875rem, 4.024rem + 10.5vw, 16.625rem);
-          }
           &__head {
             display: flex;
             justify-content: space-between;
@@ -1348,9 +1341,6 @@
                   width: 32%;
                   font-size: clamp(0.688rem, 0.148rem + 0.84vw, 0.938rem);
                 }
-                @include g.mq(pc-l) {
-                  font-size: clamp(0.938rem, 0.602rem + 0.36vw, 1.031rem);
-                }
               }
               &__right {
                 font-size: clamp(0.625rem, 0.375rem + 1.25vw, 0.75rem);
@@ -1365,9 +1355,6 @@
                 }
                 @include g.mq(pc) {
                   font-size: clamp(0.688rem, 0.148rem + 0.84vw, 0.938rem);
-                }
-                @include g.mq(pc-l) {
-                  font-size: clamp(0.938rem, 0.602rem + 0.36vw, 1.031rem);
                 }
               }
             }
@@ -1398,19 +1385,12 @@
           padding: 3.5%;
           @include g.mq(sp) {
             font-size: clamp(0.625rem, 0.206rem + 1.39vw, 0.875rem);
-            height: clamp(10.313rem, 7.799rem + 8.36vw, 11.813rem);
           }
           @include g.mq(tab) {
             font-size: clamp(0.844rem, 0.278rem + 1.18vw, 1.031rem);
-            height: clamp(11.938rem, 10.241rem + 3.53vw, 12.5rem);
           }
           @include g.mq(pc) {
             font-size: clamp(0.688rem, 0.148rem + 0.84vw, 0.938rem);
-            height: clamp(10.375rem, 5.385rem + 7.79vw, 12.688rem);
-          }
-          @include g.mq(pc-l) {
-            font-size: clamp(0.938rem, 0.602rem + 0.36vw, 1.031rem);
-            height: 200px;
           }
         }
       }
@@ -3434,33 +3414,39 @@ td {
     &__ttl {
       text-align: center;
       margin-top: 5%;
-      width: fit-content;
       margin-left: auto;
       margin-right: auto;
       &__first {
-        font-size: 14px;
-        box-sizing: border-box;
-        display: inline-block;
-        padding: 2% 2% 1% 2%;
-        background-color: g.$cWhite;
-        @include g.mq(sp) {
-          font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
-        }
-        @include g.mq(tab) {
-          font-size: clamp(0.938rem, 0.609rem + 0.68vw, 1.25rem);
+        & p {
+          font-size: 14px;
+          box-sizing: border-box;
+          display: inline-block;
+          padding: 2% 2% 1% 2%;
+          background-color: g.$cWhite;
+          @include g.mq(sp) {
+            font-size: clamp(0.688rem, 0.271rem + 1.39vw, 0.938rem);
+          }
+          @include g.mq(tab) {
+            font-size: clamp(0.938rem, 0.609rem + 0.68vw, 1.25rem);
+          }
+          @include g.mq(pc) {
+            padding: 1% 2% 0;
+          }
         }
       }
       &__second {
-        font-size: 18px;
-        display: inline-block;
-        box-sizing: border-box;
-        padding: 2%;
-        background-color: g.$cWhite;
-        @include g.mq(sp) {
-          font-size: clamp(1.125rem, 0.396rem + 2.43vw, 1.563rem);
-        }
-        @include g.mq(tab) {
-          font-size: clamp(1.563rem, 1.234rem + 0.68vw, 1.875rem);
+        & p {
+          font-size: 18px;
+          box-sizing: border-box;
+          display: inline-block;
+          padding: 2%;
+          background-color: g.$cWhite;
+          @include g.mq(sp) {
+            font-size: clamp(1.125rem, 0.396rem + 2.43vw, 1.563rem);
+          }
+          @include g.mq(tab) {
+            font-size: clamp(1.563rem, 1.234rem + 0.68vw, 1.875rem);
+          }
         }
       }
     }
