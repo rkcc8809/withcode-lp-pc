@@ -2291,7 +2291,7 @@
           @include g.mq(pc) {
             margin-left: 0;
             padding: 5.5% 12.5%;
-            font-size: clamp(0.813rem, 0.408rem + 0.63vw, 1rem);
+            font-size: clamp(0.75rem, 0.211rem + 0.84vw, 1rem);
           }
           &.__second {
             margin-left: 39%;
