@@ -2287,6 +2287,7 @@ li {
   padding: 2%;
   display: inline-block;
   margin-right: 2px;
+  white-space: nowrap;
 }
 @media screen and (min-width: 481px) {
   .cv-wrap__guide__block__body__con__right__quest__second span {
@@ -2324,6 +2325,7 @@ li {
   background-color: #fff;
   padding: 2%;
   margin-right: 2px;
+  white-space: nowrap;
 }
 @media screen and (min-width: 481px) {
   .cv-wrap__guide__block__body__con__right__counseling__first span {

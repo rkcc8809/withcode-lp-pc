@@ -1705,6 +1705,7 @@
                     padding: 2%;
                     display: inline-block;
                     margin-right: 2px;
+                    white-space: nowrap;
                     @include g.mq(sp) {
                       padding: 2% 1%;
                     }
@@ -1733,6 +1734,7 @@
                     background-color: g.$cWhite;
                     padding: 2%;
                     margin-right: 2px;
+                    white-space: nowrap;
                     @include g.mq(sp) {
                       padding: 2% 1%;
                       margin-right: 5px;
